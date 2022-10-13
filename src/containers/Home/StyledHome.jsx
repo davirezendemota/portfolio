@@ -48,15 +48,14 @@ const StyledHome = styled.div`
         }
 
         .sct-2 {
-            padding: 1rem 0;
+            padding: 50px 30px;
             width: 100%;
             min-height: 20rem;
-            background-color: var(--black-1);
-            z-index: 2;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            /* gap: 10rem */
+            background-color: var(--blue-1);
+            border-radius: 20px;
         }
 
         .about__profile {
@@ -64,6 +63,7 @@ const StyledHome = styled.div`
             display: flex;
             flex-direction: column;
             /* padding: 0 2rem; */
+            margin: 0 40px
         }
 
         .about__profile__picture {
@@ -84,16 +84,16 @@ const StyledHome = styled.div`
             display: flex;
             justify-content: center;
             gap: 1.2rem;
-            color: var(--blue-2);
+            color: var(--blue-3);
             font-size: 2rem;
         }
 
-        .about__profile__links i {
+        .about__profile__links svg {
             cursor: pointer;
             transition: color 500ms;
         }
 
-        .about__profile__links i:hover {
+        .about__profile__links svg:hover {
             color: var(--white-1);
         }
 
@@ -117,6 +117,10 @@ const StyledHome = styled.div`
         .about__content p {
             font-size: 1rem;
             font-weight: 500;
+        }
+
+        .about__profile{
+            color: white
         }
     `;
 
