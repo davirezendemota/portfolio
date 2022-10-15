@@ -1,8 +1,9 @@
 import { Button } from "../../components/Button";
 import { Carousel } from "../../components/Carousel";
-import { StyledHome } from "../../containers/Home/StyledHome"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { StyledHome } from "../../containers/Home/StyledHome";
+import { SocialButtons } from "../../components/SocialButtons";
 // FontAwesome components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,11 +25,7 @@ function Home() {
                     <div className="about__profile">
                         <img src="../src/assets/img/profile__picture.png" alt="Profile Picture" className="about__profile__picture"></img>
                         <span className="about__profile__nome">Davi Mota</span>
-                        <div className="about__profile__links">
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <FontAwesomeIcon icon={faGithub} />
-                            <FontAwesomeIcon icon={faLinkedin} />
-                        </div>
+                        <SocialButtons />
                     </div>
                     <div className="about__content">
                         <h2>Sobre</h2>
@@ -40,6 +37,15 @@ function Home() {
                 <section className="portfolio">
                     <h2>Portfolio</h2>
                     <Carousel></Carousel>
+                </section>
+                <section className="skills">
+                    <h2>Skills</h2>
+                    <Carousel></Carousel>
+                </section>
+                <section className="contact">
+                    <h2>Contato</h2>
+                    <p>Cumque reprehenderit, accusamus voluptatem cupiditate tempora laborum modi voluptatibus! Fuga praesentium nemo hic. Porro quam quas, optio sequi pariatur voluptatum ad nemo nobis aut excepturi accusamus necessitatibus praesentium iure! Cupiditate?</p>
+                    <SocialButtons />
                 </section>
         </StyledHome>
     )

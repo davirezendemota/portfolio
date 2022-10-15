@@ -5,7 +5,7 @@ const StyledCarousel = styled.div`
     display: flex;
     justify-content: start;
     gap: 10px;
-
+    overflow: hidden;
 `;
 
 export { StyledCarousel }

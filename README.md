@@ -5,6 +5,7 @@
 [ ] Create Carousel for portfolio projects
     [ ] Chevron to scroll
     [ ] Auto-scroll after 5 seconds
+    [ ] Use card inside carousel props
  
 ## Youtube
 

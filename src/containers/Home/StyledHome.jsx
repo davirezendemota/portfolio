@@ -123,11 +123,10 @@ const StyledHome = styled.div`
             color: white
         }
 
-        .portfolio{
+        .portfolio, .skills, .contact{
             display: flex;
             flex-direction: column;
             align-items: center;
-            overflow: hidden;
         }
     `;
 
