@@ -9,3 +9,4 @@
 * SOLYD Principles - https://www.youtube.com/watch?v=vAV4Vy4jfkc
 * Styled Components - https://www.youtube.com/watch?v=R3S8DEzEn6s
 * Carousel - https://www.youtube.com/watch?v=sgF7TbG3MQY
+* Carousel - https://www.youtube.com/watch?v=cX0N3TNxumw&t=819s

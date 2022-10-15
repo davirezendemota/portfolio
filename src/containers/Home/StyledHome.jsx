@@ -7,6 +7,13 @@ const StyledHome = styled.div`
             justify-content: center;
             flex-grow: 1;
             margin: 0 auto;
+            gap: 48px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--white-1);
         }
 
         .nav__link {
@@ -33,7 +40,7 @@ const StyledHome = styled.div`
             justify-content: space-between;
             align-items: center;
             /* padding: 0 5rem; */
-            margin: 3rem 0;
+            margin-top: 3rem;
         }
 
         .sct-1__content {
@@ -47,7 +54,7 @@ const StyledHome = styled.div`
             margin-top: 19rem;
         }
 
-        .sct-2 {
+        .about {
             padding: 50px 30px;
             width: 100%;
             min-height: 20rem;
@@ -104,11 +111,6 @@ const StyledHome = styled.div`
             gap: 1rem;
         }
 
-        .about__content h2 {
-            font-size: 2rem;
-            font-weight: 600;
-        }
-
         .about__content h3 {
             font-size: 1.5rem;
             font-weight: 600;
@@ -121,6 +123,13 @@ const StyledHome = styled.div`
 
         .about__profile{
             color: white
+        }
+
+        .portfolio{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
         }
     `;
 
