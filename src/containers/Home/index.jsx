@@ -9,7 +9,6 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 function Home() {
     return (
         <StyledHome className='px-5'>
-            <div className="Home">
                 <section className="sct-1">
                     <div className="sct-1__content">
                         <h2>DESENVOLVEDOR FRONT-END</h2>
@@ -42,9 +41,8 @@ function Home() {
                     <h2>Portfolio</h2>
                     <Carousel></Carousel>
                 </section>
-            </div>
         </StyledHome>
     )
 }
 
-export default Home
+export { Home }

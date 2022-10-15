@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
-        .Home {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-grow: 1;
-            margin: 0 auto;
-            gap: 48px;
-        }
         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+        margin: 48px auto;
+        gap: 48px;
+
         h2 {
             font-size: 2rem;
             font-weight: 600;
@@ -40,7 +39,6 @@ const StyledHome = styled.div`
             justify-content: space-between;
             align-items: center;
             /* padding: 0 5rem; */
-            margin-top: 3rem;
         }
 
         .sct-1__content {
