@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledSocialButtons = styled.div`
+const StyledSocialIcons = styled.div`
 
     display: flex;
     justify-content: center;
@@ -18,4 +18,4 @@ const StyledSocialButtons = styled.div`
     }
 `;
 
-export {StyledSocialButtons};
+export {StyledSocialIcons};

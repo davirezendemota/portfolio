@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-        width: 10rem;
+        /* width: 10rem; */
         color: var(--blue-3);
         border: 2px solid var(--blue-3);
         border-radius: .5rem;
@@ -16,6 +16,7 @@ const StyledButton = styled.button`
         overflow: visible;
         background: transparent;
         line-height: normal;
+        width: fit-content;
 
         &:hover{
             background-color: var(--white-1);

@@ -1,12 +1,10 @@
 import { StyledButton } from "../../components/Button/StyledButton"
 
-function Button({children, className, type}) {
+function Button({children}) {
     return (
-        <>
-            { type == "1" && (
-                <StyledButton className={ className }>{children}</StyledButton>
-            )}
-        </>
+        <StyledButton>
+            {children}
+        </StyledButton>
     )
 }
 

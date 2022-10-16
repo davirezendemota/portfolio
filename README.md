@@ -6,6 +6,7 @@
     [ ] Chevron to scroll
     [ ] Auto-scroll after 5 seconds
     [ ] Use card inside carousel props
+[x] SocialButtons Component
  
 ## Youtube
 
