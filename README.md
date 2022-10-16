@@ -3,9 +3,10 @@
 [ ] Add darkmode/lightmode theme
 [x] Send root css through styled components
 [ ] Create Carousel for portfolio projects
-    [ ] Chevron to scroll
+    [x] Chevron to scroll
     [ ] Auto-scroll after 5 seconds
     [ ] Use card inside carousel props
+    [ ] Use infinite carousel
 [x] SocialButtons Component
  
 ## Youtube
@@ -19,3 +20,5 @@
 * Styled Components Crash Course - https://www.youtube.com/watch?v=02zO0hZmwnw
 * useEffect Hook - Emerson Broga - https://www.youtube.com/watch?v=ehtB6ynyIlU
 * Busca instantânea com React - https://www.youtube.com/watch?v=3vmL_y9CxI8
+* REM and EM - https://www.youtube.com/watch?v=okw-whFWGEo
+* CSS units - https://www.youtube.com/watch?v=N5wpD9Ov_To

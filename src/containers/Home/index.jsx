@@ -1,5 +1,6 @@
 import { Button } from "../../components/Button";
 import { Carousel } from "../../components/Carousel";
+import { Card } from "../../components/Card";
 import { StyledHome } from "../../containers/Home/StyledHome";
 import { SocialIcons } from "../../components/SocialIcons";
 
@@ -32,11 +33,15 @@ function Home() {
                 </section>
                 <section className="portfolio">
                     <h2>Portfolio</h2>
-                    <Carousel></Carousel>
+                    <Carousel>
+                        <Card type="PortCard"/>
+                    </Carousel>
                 </section>
                 <section className="skills">
                     <h2>Skills</h2>
-                    <Carousel></Carousel>
+                    <Carousel>
+                        <Card type="SkillCard"/>
+                    </Carousel>
                 </section>
                 <section className="contact">
                     <h2>Contato</h2>

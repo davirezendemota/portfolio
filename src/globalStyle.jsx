@@ -9,6 +9,7 @@ const globalStyle = createGlobalStyle`
         --blue-2: #150A84;
         --blue-3: #1400F5;
         --white-1: #ffffff;
+        --white-1-1: #DEDEDE;
         --gradient-1: radial-gradient(75.41% 121.9% at 50% 50%, #0C008F 0%, #000000 100%);
     }
 

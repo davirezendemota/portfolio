@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
-function SocialButtons (){
+function SocialIcons (){
     return (
         <StyledSocialIcons>
             <FontAwesomeIcon onClick={() => {window.location="mailto:rezendemota.davi@gmail.com"}} icon={faEnvelope} />
@@ -15,4 +15,4 @@ function SocialButtons (){
     )
 }
 
-export { SocialButtons };
+export { SocialIcons };
