@@ -59,6 +59,7 @@ const globalStyle = createGlobalStyle`
         font-size: 1.5rem;
         color: var(--white-1);
         font-weight: 500;
+        margin: 0;
     }
 
 `;

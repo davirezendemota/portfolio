@@ -13,6 +13,7 @@ const StyledCarousel = styled.div`
         gap: 10px;
         overflow: hidden;
         scroll-behavior: smooth;
+        padding: .6rem 0;
     }
 
     & svg{

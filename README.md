@@ -5,7 +5,7 @@
 [ ] Create Carousel for portfolio projects
     [x] Chevron to scroll
     [ ] Auto-scroll after 5 seconds
-    [ ] Use card inside carousel props
+    [x] Use card inside carousel props
     [ ] Use infinite carousel
 [x] SocialButtons Component
  
@@ -22,3 +22,5 @@
 * Busca instantânea com React - https://www.youtube.com/watch?v=3vmL_y9CxI8
 * REM and EM - https://www.youtube.com/watch?v=okw-whFWGEo
 * CSS units - https://www.youtube.com/watch?v=N5wpD9Ov_To
+* VsCode extensions - https://www.youtube.com/watch?v=g1vy03ZY5mM
+* React Course - https://www.youtube.com/watch?v=U2Wltnv-doo&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR
