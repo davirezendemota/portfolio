@@ -8,6 +8,7 @@
     [x] Use card inside carousel props
     [ ] Use infinite carousel
     [ ] Transparent gradient when overflow start
+    [ ] Testing vercel
 [x] SocialButtons Component
  
 ## Youtube
