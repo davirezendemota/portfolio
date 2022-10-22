@@ -7,6 +7,7 @@
     [ ] Auto-scroll after 5 seconds
     [x] Use card inside carousel props
     [ ] Use infinite carousel
+    [ ] Transparent gradient when overflow start
 [x] SocialButtons Component
  
 ## Youtube
