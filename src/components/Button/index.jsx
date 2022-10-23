@@ -1,8 +1,8 @@
 import { StyledButton } from "../../components/Button/StyledButton"
 
-function Button({children}) {
+function Button({children, link}) {
     return (
-        <StyledButton>
+        <StyledButton onClick={() => {location.href=link}}>
             {children}
         </StyledButton>
     )
