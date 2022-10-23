@@ -3,6 +3,8 @@ import { Carousel } from "../../components/Carousel";
 import { Card } from "../../components/Card";
 import { StyledHome } from "../../containers/Home/StyledHome";
 import { SocialIcons } from "../../components/SocialIcons";
+import devVetor from "../src/assets/img/profile__picture.png";
+import profilePicture from "../src/assets/img/profile__picture.png";
 
 function Home() {
     return (
@@ -15,12 +17,12 @@ function Home() {
                         <Button link="../src/assets/Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
                     <div className="dev__vetor">
-                        <img src="../src/assets/img/dev-vetor--cutted.png" alt="Davi Mota" className="dev__vetor__img" />
+                        <img src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
                     </div>
                 </section>
                 <section className="about">
                     <div className="about__profile">
-                        <img src="../src/assets/img/profile__picture.png" alt="Profile Picture" className="about__profile__picture"></img>
+                        <img src={profilePicture} alt="Profile Picture" className="about__profile__picture"></img>
                         <span className="about__profile__nome">Davi Mota</span>
                         <SocialIcons />
                     </div>
