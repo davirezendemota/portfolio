@@ -3,8 +3,8 @@ import { Carousel } from "../../components/Carousel";
 import { Card } from "../../components/Card";
 import { StyledHome } from "../../containers/Home/StyledHome";
 import { SocialIcons } from "../../components/SocialIcons";
-import devVetor from "../src/assets/img/profile__picture.png";
-import profilePicture from "../src/assets/img/profile__picture.png";
+import devVetor from "../../src/assets/img/profile__picture.png";
+import profilePicture from "../../src/assets/img/profile__picture.png";
 
 function Home() {
     return (
