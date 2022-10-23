@@ -1,11 +1,11 @@
-function Navbar() {
-    const logoSrc = "../src/assets/img/logo.png";
+import logo from "../../assets/img/logo.png";
 
+function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg position-relative px-5">
             <div className="px-0 container-fluid">
                 <a className="navbar-brand" href="#">
-                    <img src={logoSrc} alt="logoSrc" />
+                    <img src={logo} alt="logoSrc" />
                 </a>
                 {/* <button
                     className="navbar-toggler"
