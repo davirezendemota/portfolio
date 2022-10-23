@@ -5,7 +5,6 @@ import { StyledHome } from "../../containers/Home/StyledHome";
 import { SocialIcons } from "../../components/SocialIcons";
 import devVetor from "../../assets/img/dev-vetor--cutted.png";
 import profilePicture from "../../assets/img/profile__picture.png";
-// import resume from "../../assets/Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf";
 
 function Home() {
     return (
