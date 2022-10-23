@@ -12,7 +12,7 @@ function Home() {
                         <h2>DESENVOLVEDOR FRONT-END</h2>
                         <h1>Davi Mota</h1>
                         <p>Lörem ipsum plajöngen vöplavunyl som viras pevibel än mir anadovis såsom kartad. </p>
-                        <Button>HIRE ME</Button>
+                        <Button link="../src/assets/Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
                     <div className="dev__vetor">
                         <img src="../src/assets/img/dev-vetor--cutted.png" alt="Davi Mota" className="dev__vetor__img" />
