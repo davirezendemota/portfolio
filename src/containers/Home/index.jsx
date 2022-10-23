@@ -19,6 +19,7 @@ function Home() {
                     <div className="dev__vetor">
                         <img src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
                     </div>
+                    
                 </section>
                 <section className="about">
                     <div className="about__profile">
