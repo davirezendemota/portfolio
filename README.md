@@ -12,6 +12,7 @@
 [ ] Testing vercel
 [ ] Deploy into vercel
 [ ] Connect my domain
+[ ] Use rem and responsive 
  
  
 ## Youtube
@@ -30,8 +31,9 @@
 * VsCode extensions - https://www.youtube.com/watch?v=g1vy03ZY5mM
 * React Course - https://www.youtube.com/watch?v=U2Wltnv-doo&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR
 * React Router Dom - https://www.youtube.com/watch?v=1lXHzKgazys
-
+* Use VIM as my editor - https://www.youtube.com/watch?v=X6AR2RMB5tE
 * React Variants - https://stackoverflow.com/questions/63663554/approach-to-creating-variants-with-styled-components
+* Theo Channel - https://www.youtube.com/c/TheoBrowne1017
 ### NLW#4
 * NLW#4 Rumo Ao Próximo Nível - (1/6) - https://www.youtube.com/watch?v=XDFlV76UJuA
 * NLW#4 Desvendando o NextJs - (2/6) - https://www.youtube.com/watch?v=7ceWRavb6Ac
