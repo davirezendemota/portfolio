@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Image from 'next/image'
+
 
 import { StyledHome } from "../StyledComponents/StyledHome";
 import { Button } from "../components/Button";
@@ -27,12 +29,12 @@ export default function Home() {
                         <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
                     <div className="dev__vetor">
-                        {/* <img src={devVetor} alt="Davi Mota" className="dev__vetor__img" /> */}
+                        <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
                     </div>
                 </section>
                 <section className="about">
                     <div className="about__profile">
-                        {/* <img src={profilePicture} alt="Profile Picture" className="about__profile__picture"></img> */}
+                        <Image src={profilePicture} alt="Profile Picture" className="about__profile__picture" />
                         <span className="about__profile__nome">Davi Mota</span>
                         <SocialIcons />
                     </div>

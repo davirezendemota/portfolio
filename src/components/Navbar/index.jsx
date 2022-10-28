@@ -1,3 +1,4 @@
+import Image from "next/image";
 import logo from "../../assets/img/logo.svg";
 // import { Link } from 'react-router-dom'
 import { StyledNavBar } from "./StyledNavBar";
@@ -10,7 +11,7 @@ function Navbar() {
                 <div className="px-0 container-fluid">
                     <div className="navbar-brand">
                         {/* <Link to='/'> */}
-                            <img src={logo} alt="logoSrc" />
+                            <Image src={logo} alt="logoSrc" />
                         {/* </Link> */}
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
