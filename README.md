@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tasks
+[ ] Add language switch in navbar (en/pt-br)
+[ ] Add darkmode/lightmode theme
+[x] Send root css through styled components
+[ ] Create Carousel for portfolio projects
+    [x] Chevron to scroll
+    [ ] Auto-scroll after 5 seconds
+    [x] Use card inside carousel props
+    [ ] Use infinite carousel
+    [ ] Transparent gradient when overflow start
+[x] SocialButtons Component
+[ ] Testing vercel
+[ ] Deploy into vercel
+[ ] Connect my domain
+ 
+ 
+## Youtube
 
-## Getting Started
+* Folder Structure - https://www.youtube.com/watch?v=uqKoqcO08ho
+* SOLYD Principles - https://www.youtube.com/watch?v=vAV4Vy4jfkc
+* Styled Components - https://www.youtube.com/watch?v=R3S8DEzEn6s
+* Carousel - https://www.youtube.com/watch?v=sgF7TbG3MQY
+* Carousel - Emerson Broga - https://www.youtube.com/watch?v=cX0N3TNxumw
+* Carousel - Rocketseat - https://www.youtube.com/watch?v=SGwHpzgqzgk
+* Styled Components Crash Course - https://www.youtube.com/watch?v=02zO0hZmwnw
+* useEffect Hook - Emerson Broga - https://www.youtube.com/watch?v=ehtB6ynyIlU
+* Busca instantânea com React - https://www.youtube.com/watch?v=3vmL_y9CxI8
+* REM and EM - https://www.youtube.com/watch?v=okw-whFWGEo
+* CSS units - https://www.youtube.com/watch?v=N5wpD9Ov_To
+* VsCode extensions - https://www.youtube.com/watch?v=g1vy03ZY5mM
+* React Course - https://www.youtube.com/watch?v=U2Wltnv-doo&list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR
+* React Router Dom - https://www.youtube.com/watch?v=1lXHzKgazys
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* React Variants - https://stackoverflow.com/questions/63663554/approach-to-creating-variants-with-styled-components
+### NLW#4
+* NLW#4 Rumo Ao Próximo Nível - (1/6) - https://www.youtube.com/watch?v=XDFlV76UJuA
+* NLW#4 Desvendando o NextJs - (2/6) - https://www.youtube.com/watch?v=7ceWRavb6Ac
+* NLW#4 Contexto e Componentes - (3/6) - https://www.youtube.com/watch?v=ArqCBqN7zzc
+* NLW#4 Melhorando a usabilidade da aplicação - (4/6) - https://www.youtube.com/watch?v=gZA1IjCRF0c
+* NLW#4 Próximo Nível com React - (5/6) - https://www.youtube.com/watch?v=nId4TNW4tlI
+* NLW#4 Encerramento da quarta edição - (6/6) - https://www.youtube.com/watch?v=p0OhKagYdK8
