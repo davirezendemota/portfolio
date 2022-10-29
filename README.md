@@ -3,6 +3,7 @@
 [ ] Add language switch in navbar (en/pt-br)
 [ ] Add darkmode/lightmode theme
 [ ] Use rem and responsive 
+[ ] Hardcoded infos until bulding and API
 [ ] Create Carousel for portfolio projects
     [x] Chevron to scroll
     [ ] Auto-scroll after 5 seconds

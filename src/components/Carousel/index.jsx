@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import { StyledCarousel } from './StyledCarousel';
-import { Card } from '../Card';
+
 // FontAwesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';

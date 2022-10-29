@@ -4,12 +4,11 @@ import { Navbar } from '../components/Navbar'
 import GlobalStyle from '../globalStyle'
 
 
-
 function MyApp({ Component, pageProps }) {
     return (
         <>
-            <Navbar/>
             <GlobalStyle />
+            <Navbar/>
             <Component {...pageProps} />
             <Footer />
         </>

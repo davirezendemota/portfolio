@@ -1,18 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-
 import { StyledHome } from "../StyledComponents/StyledHome";
 import { Button } from "../components/Button";
 import { Carousel } from "../components/Carousel";
 import { Card } from "../components/Card";
 import { SocialIcons } from "../components/SocialIcons";
-import { Navbar } from "../components/Navbar";
-import { Footer } from "../components/Footer";
 import devVetor from "../assets/img/dev-vetor--cutted.png";
 import profilePicture from "../assets/img/profile__picture.png";
-
-
 
 
 export default function Home() {
@@ -49,13 +44,13 @@ export default function Home() {
                 <section className="portfolio">
                     <h2>Portfolio</h2>
                     <Carousel>
-                        <Card type="PortCard" />
+                        <Card variant="PortCard" />
                     </Carousel>
                 </section>
                 <section className="skills">
                     <h2>Skills</h2>
                     <Carousel>
-                        <Card type="SkillCard" />
+                        <Card variant="SkillCard" />
                     </Carousel>
                 </section>
                 <section className="contact">
