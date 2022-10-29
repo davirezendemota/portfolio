@@ -128,6 +128,12 @@ const StyledHome = styled.div`
             flex-direction: column;
             align-items: center;
         }
+
+        .contact p{
+            font-size: 1rem;
+            text-align: center;
+            max-width: 110ch;
+        }
     `;
 
 export { StyledHome }

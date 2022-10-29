@@ -1,18 +1,19 @@
 # Tasks
+[ ] SkillCard Component with variants
 [ ] Add language switch in navbar (en/pt-br)
 [ ] Add darkmode/lightmode theme
-[x] Send root css through styled components
+[ ] Use rem and responsive 
 [ ] Create Carousel for portfolio projects
     [x] Chevron to scroll
     [ ] Auto-scroll after 5 seconds
     [x] Use card inside carousel props
     [ ] Use infinite carousel
     [ ] Transparent gradient when overflow start
+[x] Send root css through styled components
 [x] SocialButtons Component
-[ ] Testing vercel
-[ ] Deploy into vercel
-[ ] Connect my domain
-[ ] Use rem and responsive 
+[x] Testing vercel
+[x] Deploy into vercel
+[x] Connect my domain
  
  
 ## Youtube

@@ -13,13 +13,14 @@ import devVetor from "../assets/img/dev-vetor--cutted.png";
 import profilePicture from "../assets/img/profile__picture.png";
 
 
+
+
 export default function Home() {
     return (
         <div>
             <Head>
                 <title>Davi Mota - Dev Front-end</title>
             </Head>
-            <Navbar/>
             <StyledHome className='px-5'>
                 <section className="sct-1">
                     <div className="sct-1__content">
@@ -63,7 +64,6 @@ export default function Home() {
                     <SocialIcons />
                 </section>
             </StyledHome>
-            <Footer />
         </div>
     )
 }
