@@ -30,18 +30,11 @@ function Carousel ({children}){
 
     return (
         <StyledCarousel>
-            <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft}/>
+            <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft} className="scrollBtn"/>
             <div className="carousel__group" ref={carousel}>
-
-                {arr.map(i => { /*TEMPORARY*/
-                    return (
-                        <div key={i}>
-                            {children}
-                        </div>
-                    )
-                })}
+                {children}
             </div>
-            <FontAwesomeIcon onClick={goRight} icon={faCaretRight}/>
+            <FontAwesomeIcon onClick={goRight} icon={faCaretRight} className="scrollBtn"/>
         </StyledCarousel>
     )
 }

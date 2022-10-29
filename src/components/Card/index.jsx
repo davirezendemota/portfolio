@@ -1,13 +1,13 @@
 import { PortCard } from './PortCard'
 import { SkillCard } from './SkillCard'
 
-function Card ({variant}) {
+function Card ({variant, skillName = null, skillLogo = null, progress = null}) {
 
     switch(variant){
         case 'PortCard':
             return <PortCard />;
         case 'SkillCard': 
-            return <SkillCard />
+            return <SkillCard skillLogo={skillLogo} skillName={skillName} progress={progress}/>
     }
     
 }

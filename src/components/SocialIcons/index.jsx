@@ -2,7 +2,7 @@ import { StyledSocialIcons } from "./StyledSocialIcons";
 // FontAwesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faInstagram, faFigma } from "@fortawesome/free-brands-svg-icons";
 
 function SocialIcons (){
     return (

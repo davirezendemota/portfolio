@@ -16,7 +16,7 @@ const StyledCarousel = styled.div`
         padding: .6rem 0;
     }
 
-    & svg{
+    & .scrollBtn{
         background-color: var(--blue-3);
         padding: 8px;
         font-size: 2rem;
