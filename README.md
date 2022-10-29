@@ -1,4 +1,5 @@
 # Tasks
+[ ] Responsive
 [ ] SkillCard Component with variants
 [ ] Add language switch in navbar (en/pt-br)
 [ ] Add darkmode/lightmode theme

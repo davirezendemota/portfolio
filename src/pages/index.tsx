@@ -66,7 +66,7 @@ export default function Home() {
                         <Card skillName="PHP" variant="SkillCard" />
                         <Card skillName="HTML/CSS" variant="SkillCard" />
                         <Card skillName="Git/GitHub" variant="SkillCard" />
-                        <Card skillName="Figma" variant="SkillCard" />
+                        <Card skillName="Figma" variant="SkillCard"/>
                     </Carousel>
                 </section>
                 <section className="contact">
