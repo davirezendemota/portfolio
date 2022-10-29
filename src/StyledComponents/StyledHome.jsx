@@ -6,8 +6,9 @@ const StyledHome = styled.div`
         flex-direction: column;
         justify-content: center;
         flex-grow: 1;
-        margin: 48px auto;
-        gap: 48px;
+        margin: 3rem auto;
+        gap: 3rem;
+        max-width: 90vw;
 
         h2 {
             font-size: 2rem;
@@ -132,7 +133,15 @@ const StyledHome = styled.div`
         .contact p{
             font-size: 1rem;
             text-align: center;
-            max-width: 110ch;
+            margin-bottom: 1.5rem;
+            max-width: 80%;
+            font-weight: 400;
+        }
+
+        .skills h2,
+        .portfolio h2,
+        .contact h2{
+            margin-bottom: 1.5rem;
         }
     `;
 

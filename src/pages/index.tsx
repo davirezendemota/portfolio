@@ -8,12 +8,18 @@ import { Card } from "../components/Card";
 import { SocialIcons } from "../components/SocialIcons";
 import devVetor from "../assets/img/dev-vetor--cutted.png";
 import profilePicture from "../assets/img/profile__picture.png";
-import JSLogo from '../../public/JSLogo.png';
-import ReactLogo from '../../public/ReactLogo.png';
-import FigmaLogo from '../../public/FigmaLogo.png';
 
 
 export default function Home() {
+
+    const portfolio = [
+        {
+            tit: 'Titulo',
+
+        }
+    ]
+
+
     return (
         <div>
             <Head>
@@ -46,7 +52,7 @@ export default function Home() {
                 </section>
                 <section className="portfolio">
                     <h2>Portfolio</h2>
-                    <Carousel>
+                    <Carousel >
                         <Card variant="PortCard" />
                         <Card variant="PortCard" />
                         <Card variant="PortCard" />
@@ -55,9 +61,12 @@ export default function Home() {
                 <section className="skills">
                     <h2>Skills</h2>
                     <Carousel>
-                        <Card skillLogo={JSLogo} skillName="JavaScript" variant="SkillCard" />
-                        <Card skillLogo={ReactLogo} skillName="React" variant="SkillCard" />
-                        <Card skillLogo={FigmaLogo} skillName="Figma" variant="SkillCard" />
+                        <Card skillName="React" variant="SkillCard" />
+                        <Card skillName="JavaScript" variant="SkillCard" />
+                        <Card skillName="PHP" variant="SkillCard" />
+                        <Card skillName="HTML/CSS" variant="SkillCard" />
+                        <Card skillName="Git/GitHub" variant="SkillCard" />
+                        <Card skillName="Figma" variant="SkillCard" />
                     </Carousel>
                 </section>
                 <section className="contact">

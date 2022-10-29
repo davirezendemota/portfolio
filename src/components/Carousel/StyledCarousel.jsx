@@ -2,18 +2,17 @@ import styled from "styled-components";
 
 const StyledCarousel = styled.div`
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
-    gap: 2rem;
 
     .carousel__group{
         display: flex;
-        justify-content: start;
-        gap: 10px;
+        justify-content: center;
+        gap: 1.8rem;
         overflow: hidden;
         scroll-behavior: smooth;
-        padding: .6rem 0;
+        margin: 0 auto;
     }
 
     & .scrollBtn{

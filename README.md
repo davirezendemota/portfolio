@@ -4,6 +4,8 @@
 [ ] Add darkmode/lightmode theme
 [ ] Use rem and responsive 
 [ ] Hardcoded infos until bulding and API
+[ ] Use Material-UI
+[ ] Style scroolbar
 [ ] Create Carousel for portfolio projects
     [x] Chevron to scroll
     [ ] Auto-scroll after 5 seconds

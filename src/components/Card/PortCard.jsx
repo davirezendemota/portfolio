@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const StyledPortCard = styled(StyledCard)`
     
+    margin: .6rem 0;
     background-color: var(--blue-1);
     width: 18.75rem;
     display: flex;

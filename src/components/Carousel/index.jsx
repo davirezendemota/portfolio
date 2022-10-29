@@ -8,7 +8,7 @@ import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 
 
-function Carousel ({children}){
+function Carousel ({children, controls = false}){
 
     const carousel = useRef(null);
     
@@ -30,11 +30,11 @@ function Carousel ({children}){
 
     return (
         <StyledCarousel>
-            <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft} className="scrollBtn"/>
+            {controls && <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft} className="scrollBtn"/>}
             <div className="carousel__group" ref={carousel}>
                 {children}
             </div>
-            <FontAwesomeIcon onClick={goRight} icon={faCaretRight} className="scrollBtn"/>
+            {controls && <FontAwesomeIcon onClick={goRight} icon={faCaretRight} className="scrollBtn"/>}
         </StyledCarousel>
     )
 }
