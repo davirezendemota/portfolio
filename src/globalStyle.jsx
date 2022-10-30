@@ -45,6 +45,10 @@ const globalStyle = createGlobalStyle`
         }
     }
 
+    .Home{
+        padding: 0 3rem;
+    }
+
     @media(max-width: 500px){
         html{
             font-size: 80%;
@@ -53,10 +57,22 @@ const globalStyle = createGlobalStyle`
             flex-direction: column;
         }
         .Home{
-            padding: 0 1rem;
+            padding: 0 ;
         }
         .about__profile{
             margin: 0 !important;
+        }
+        .dev__vetor__img{
+            display: none;
+        }
+        .sct-1{
+            min-height: auto !important;
+        }
+        .about__content{
+            border-radius: 0 !important;
+        }
+        .skills{
+            padding: 0 1rem;
         }
     }
 

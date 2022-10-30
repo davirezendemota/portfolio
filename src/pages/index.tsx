@@ -87,7 +87,7 @@ export default function Home() {
                 </section>
                 <section className="skills">
                     <h2>Skills</h2>
-                    <Carousel variant="skills" data={skillDB}/>
+                    <Carousel variant="skills" data={skillDB} controls/>
                         {/* <Card skillName="React" variant="SkillCard" />
                         <Card skillName="JavaScript" variant="SkillCard" />
                         <Card skillName="PHP" variant="SkillCard" />

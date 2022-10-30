@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
-        padding: 0 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
