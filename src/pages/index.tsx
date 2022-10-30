@@ -54,7 +54,7 @@ export default function Home() {
             <Head>
                 <title>Davi Mota | Home</title>
             </Head>
-            <StyledHome>
+            <StyledHome className="Home">
                 <section className="sct-1">
                     <div className="sct-1__content">
                         <h2>Hello, I am</h2>

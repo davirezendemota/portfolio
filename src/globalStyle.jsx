@@ -52,6 +52,12 @@ const globalStyle = createGlobalStyle`
         .sct-1{
             flex-direction: column;
         }
+        .Home{
+            padding: 0 1rem;
+        }
+        .about__profile{
+            margin: 0 !important;
+        }
     }
 
     * {
