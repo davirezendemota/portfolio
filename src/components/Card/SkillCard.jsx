@@ -5,14 +5,14 @@ import { ExperienceBar } from '../ExperienceBar';
 
 // FAICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faJs,
+import { faSquareJs,
         faFigma,
         faReact, 
         faGitAlt, 
         faGithub, 
         faHtml5, 
         faCss3Alt,
-        faPhp
+        faPhp,
     } from "@fortawesome/free-brands-svg-icons";
 
 
@@ -50,7 +50,7 @@ const StyledSkillCard = styled(StyledCard)`
         display: flex;
         align-items:center;
         justify-content: center;
-        margin: 1rem auto;
+        margin: 1rem auto 0 auto;
         
         & .multiIcon{
             /* background-color: #ffffff50; */
@@ -90,36 +90,45 @@ const StyledSkillCard = styled(StyledCard)`
 `;
 
 
-function SkillCard({skillName, progress = null}) {
+function SkillCard({data}) {
+
+    const { skillName, progress } = data;
+
+    function renderSwitch(skillName)
+    {
+        switch(skillName){
+            case 'JavaScript':
+                return <FontAwesomeIcon className="skillIcon" icon={faSquareJs} />;
+            case 'HTML/CSS':
+                return (
+                    <div className="multiIcon">
+                        <FontAwesomeIcon className="skillIcon" icon={faHtml5} />
+                        <FontAwesomeIcon className="skillIcon" icon={faCss3Alt} />
+                    </div>
+                );
+            case 'React':
+                return <FontAwesomeIcon className="skillIcon" icon={faReact} />;
+            case 'Git/GitHub':
+                return (
+                    <div className="multiIcon">
+                        <FontAwesomeIcon className="skillIcon" icon={faGitAlt} />
+                        <FontAwesomeIcon className="skillIcon" icon={faGithub} />
+                    </div>
+                );
+            case 'Figma':
+                return <FontAwesomeIcon className="skillIcon" icon={faFigma} />;
+            case 'PHP':
+                return <FontAwesomeIcon className="skillIcon" icon={faPhp} />;
+            default:
+                return '';
+        }
+    }
 
     return (
         <StyledSkillCard>
             <span className="skillName">{skillName}</span>
             <div className="skillLogo">
-                {/* <Image
-                    style={{
-                        objectFit: "contain"
-                    }}
-                    fill
-                    src={skillLogo}
-                    alt={skillName} 
-                    /> */}
-                {skillName == 'JavaScript' && <FontAwesomeIcon className="skillIcon" icon={faJs} />}
-                {skillName == 'HTML/CSS' && 
-                    <div className="multiIcon">
-                        <FontAwesomeIcon className="skillIcon" icon={faHtml5} />
-                        <FontAwesomeIcon className="skillIcon" icon={faCss3Alt} />
-                    </div>
-                }
-                {skillName == 'React' && <FontAwesomeIcon className="skillIcon" icon={faReact} />}
-                {skillName == 'Git/GitHub' && 
-                    <div className="multiIcon">
-                        <FontAwesomeIcon className="skillIcon" icon={faGitAlt} />
-                        <FontAwesomeIcon className="skillIcon" icon={faGithub} />
-                    </div>
-                }
-                {skillName == 'Figma' && <FontAwesomeIcon className="skillIcon" icon={faFigma} />}
-                {skillName == 'PHP' && <FontAwesomeIcon className="skillIcon" icon={faPhp} />}
+                {renderSwitch(data.skillName)}
             </div>
             {progress && <ExperienceBar progress={progress}/>}
         </StyledSkillCard>

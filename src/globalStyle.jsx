@@ -11,7 +11,18 @@ const globalStyle = createGlobalStyle`
         --white-1: #ffffff;
         --white-1-1: #DEDEDE;
         --gradient-1: radial-gradient(75.41% 121.9% at 50% 50%, #0C008F 0%, #000000 100%);
-        font-size: 16px;
+    }
+
+    @media(max-width: 1080px){
+        html{
+            font-size: 93.75%;
+        }
+    }
+
+    @media(max-width: 720px){
+        html{
+            font-size: 87.5%;
+        }
     }
 
     * {

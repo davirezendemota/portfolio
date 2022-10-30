@@ -5,10 +5,12 @@ import { StyledCarousel } from './StyledCarousel';
 // FontAwesome components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { PortCard } from '../Card/PortCard';
+import { SkillCard } from '../Card/SkillCard';
 
 
 
-function Carousel ({children, controls = false}){
+function Carousel ({controls = false, variant = null, data = null, children = null}){
 
     const carousel = useRef(null);
     
@@ -26,13 +28,22 @@ function Carousel ({children, controls = false}){
         carousel.current.scrollLeft += carousel.current.offsetWidth; 
     }
 
-    var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    function renderSwitch(variant){
+        switch(variant){
+            case 'projects':
+                return data.map((item, idx) => (<PortCard key={idx} data={item}/>));
+            case 'skills':
+                return data.map((item, idx) => (<SkillCard key={idx} data={item}/>));
+            default:
+                return children;
+        }
+    }
 
     return (
         <StyledCarousel>
             {controls && <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft} className="scrollBtn"/>}
             <div className="carousel__group" ref={carousel}>
-                {children}
+                {renderSwitch(variant)}
             </div>
             {controls && <FontAwesomeIcon onClick={goRight} icon={faCaretRight} className="scrollBtn"/>}
         </StyledCarousel>

@@ -12,10 +12,39 @@ import profilePicture from "../assets/img/profile__picture.png";
 
 export default function Home() {
 
-    const portfolio = [
+    const projectDB = [
         {
-            tit: 'Titulo',
+            tit: 'davimota.com',
+            desc: 'My website to unify personal projects, tools, carrer history, certicates and degrees.',
+            techs: [ 'NextJs', 'ReactJs', 'JavaScript', 'JavaScript', 'JavaScript', 'CSS/HTML'],
+            github: 'https://github.com/davirezendemota/davimota.com'
+        }
+    ]
 
+    const skillDB = [
+        {
+            skillName: 'React',
+            // progress: 0.6,
+        },
+        {
+            skillName: 'JavaScript',
+            // progress: 0.7,
+        },
+        {
+            skillName: 'PHP',
+            // progress: 0.4,
+        },
+        {
+            skillName: 'HTML/CSS',
+            // progress: 0.8,
+        },
+        {
+            skillName: 'Git/GitHub',
+            // progress: 0.8,
+        },
+        {
+            skillName: 'Figma',
+            // progress: 0.9,
         }
     ]
 
@@ -23,14 +52,15 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Davi Mota - Dev Front-end</title>
+                <title>Davi Mota | Home</title>
             </Head>
             <StyledHome className='px-5'>
                 <section className="sct-1">
                     <div className="sct-1__content">
-                        <h2>DESENVOLVEDOR FRONT-END</h2>
+                        <h2>Hello, I am</h2>
                         <h1>Davi Mota</h1>
-                        <p>Lörem ipsum plajöngen vöplavunyl som viras pevibel än mir anadovis såsom kartad. </p>
+                        {/* <p>And this is my website!</p> */}
+                        <p>Front-end Developer</p>
                         <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
                     <div className="dev__vetor">
@@ -41,37 +71,34 @@ export default function Home() {
                     <div className="about__profile">
                         <Image src={profilePicture} alt="Profile Picture" className="about__profile__picture" />
                         <span className="about__profile__nome">Davi Mota</span>
-                        <SocialIcons />
                     </div>
                     <div className="about__content">
-                        <h2>Sobre</h2>
-                        <h3>Conheça um pouco sobre mim</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium sapiente exercitationem? Odio qui, sapiente beatae laborum tenetur dolorum sed nobis doloremque quasi accusantium, quos, praesentium corrupti perferendis provident quas?</p>
-                        <p>Cumque reprehenderit, accusamus voluptatem cupiditate tempora laborum modi voluptatibus! Fuga praesentium nemo hic. Porro quam quas, optio sequi pariatur voluptatum ad nemo nobis aut excepturi accusamus necessitatibus praesentium iure! Cupiditate?</p>
+                        <h2>About me</h2>
+                        <p>
+                            I am a self taught software developer, able to bring knowledge in design, creation and maintenance of software systems.
+                            <br/>
+                            <br/>
+                            Partner and Front-end development leader at ACB WEB, a company focused on creation of customized online systems for companies.
+                        </p>
+                        <SocialIcons />
                     </div>
                 </section>
                 <section className="portfolio">
-                    <h2>Portfolio</h2>
-                    <Carousel >
-                        <Card variant="PortCard" />
-                        <Card variant="PortCard" />
-                        <Card variant="PortCard" />
-                    </Carousel>
+                    <h2>Projects</h2>
+                    <Carousel variant="projects" data={projectDB} />
                 </section>
                 <section className="skills">
                     <h2>Skills</h2>
-                    <Carousel>
-                        <Card skillName="React" variant="SkillCard" />
+                    <Carousel variant="skills" data={skillDB}/>
+                        {/* <Card skillName="React" variant="SkillCard" />
                         <Card skillName="JavaScript" variant="SkillCard" />
                         <Card skillName="PHP" variant="SkillCard" />
                         <Card skillName="HTML/CSS" variant="SkillCard" />
                         <Card skillName="Git/GitHub" variant="SkillCard" />
-                        <Card skillName="Figma" variant="SkillCard"/>
-                    </Carousel>
+                        <Card skillName="Figma" variant="SkillCard"/> */}
                 </section>
                 <section className="contact">
-                    <h2>Contato</h2>
-                    <p>Cumque reprehenderit, accusamus voluptatem cupiditate tempora laborum modi voluptatibus! Fuga praesentium nemo hic. Porro quam quas, optio sequi pariatur voluptatum ad nemo nobis aut excepturi accusamus necessitatibus praesentium iure! Cupiditate?</p>
+                    <h2>Contact</h2>
                     <SocialIcons />
                 </section>
             </StyledHome>

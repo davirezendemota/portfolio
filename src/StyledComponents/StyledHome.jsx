@@ -8,7 +8,7 @@ const StyledHome = styled.div`
         flex-grow: 1;
         margin: 3rem auto;
         gap: 3rem;
-        max-width: 90vw;
+        max-width: 90rem;
 
         h2 {
             font-size: 2rem;
@@ -46,6 +46,15 @@ const StyledHome = styled.div`
             width: 50%;
             display: flex;
             flex-direction: column;
+
+            & h2{
+                font-size: 2rem;
+                color: var(--white-1);
+            }
+
+            & p{
+                color: var(--white-1);
+            }
         }
 
         .container__wave {
@@ -54,14 +63,13 @@ const StyledHome = styled.div`
         }
 
         .about {
-            padding: 50px 30px;
+            margin: 0 auto;
+            padding: 3rem 0;
             width: 100%;
             min-height: 20rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            background-color: var(--blue-1);
-            border-radius: 20px;
         }
 
         .about__profile {
@@ -69,12 +77,12 @@ const StyledHome = styled.div`
             display: flex;
             flex-direction: column;
             /* padding: 0 2rem; */
-            margin: 0 40px
+            margin-right: 2.5rem;
         }
 
         .about__profile__picture {
-            height: 240px;
-            width: 240px;
+            height: 15rem;
+            width: 15rem;
             border-radius: 50%;
             border-width: 4px;
             border-style: solid;
@@ -104,10 +112,17 @@ const StyledHome = styled.div`
         }
 
         .about__content {
+            padding: 3rem 2rem;
             color: var(--white-1);
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            border-radius: 1.2rem;
+            background-color: var(--blue-1);
+            /* background-color: blue; */
         }
 
         .about__content h3 {

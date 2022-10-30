@@ -6,7 +6,7 @@ const StyledPortCard = styled(StyledCard)`
     
     margin: .6rem 0;
     background-color: var(--blue-1);
-    width: 18.75rem;
+    min-width: 18.75rem;
     display: flex;
     flex-direction: column;
     flex: 0;
@@ -60,19 +60,21 @@ const StyledPortCard = styled(StyledCard)`
     }
 `;
 
-function PortCard () {
+function PortCard ({data}) {
 
-    const techs = ['react.js', 'css', 'html'];
+    const {tit, desc, techs, github } = data;
+    
+    // const techs = ['react.js', 'css', 'html'];
 
     return (
         <StyledPortCard>
             <div className="tab"></div>
-            <span className='title'>Some Project</span>
-            <p className='description'>Description of project lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem </p>
+            <span className='title'>{tit}</span>
+            <p className='description'>{desc}</p>
             <div className="group__tags">
-                {techs.map((i) => {return (<div key={i} className="tag">{i}</div>)})}
+                {techs.map((item => {return (<div key={item} className="tag">{item}</div>)}))}
             </div>
-            <Button>See</Button>
+            <Button link={github}>See</Button>
         </StyledPortCard>
     )
 }
