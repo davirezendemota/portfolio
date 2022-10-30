@@ -1,6 +1,6 @@
 * Hardcoded infos until bulding and API
 # Tasks
-- [ ] V1
+- [x] V1
 - [ ] Navlinks
 - [ ] API to dynamic data
 - [ ] Remove bootstrap
