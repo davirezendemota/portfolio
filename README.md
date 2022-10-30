@@ -2,7 +2,6 @@
 [ ] Remove bootstrap
 [ ] fix:(PortCard/techtags): resolve horizontal overflow
 [ ] Form component to contact
-[ ] Fill index page information
 [ ] Responsive version
 [ ] SkillCard Component with variants
 [ ] Add language switch in navbar (en/pt-br)
@@ -10,7 +9,6 @@
 [ ] Use rem and responsive 
 [ ] Hardcoded infos until bulding and API
 [ ] Use Material-UI
-[ ] Style scroolbar
 [ ] Create Carousel for portfolio projects
     [ ] Use array of objects to handle the iteration
     [x] Chevron to scroll
@@ -18,6 +16,8 @@
     [x] Use card inside carousel props
     [ ] Use infinite carousel
     [ ] Transparent gradient when overflow start
+[x] Style scroolbar
+[x] Fill index page information
 [x] Send root css through styled components
 [x] SocialButtons Component
 [x] Testing vercel

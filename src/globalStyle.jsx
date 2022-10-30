@@ -13,6 +13,20 @@ const globalStyle = createGlobalStyle`
         --gradient-1: radial-gradient(75.41% 121.9% at 50% 50%, #0C008F 0%, #000000 100%);
     }
 
+    ::-webkit-scrollbar-track{
+        background-color: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--blue-3);
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+
     @media(max-width: 1080px){
         html{
             font-size: 93.75%;
@@ -34,6 +48,7 @@ const globalStyle = createGlobalStyle`
 
     body {
         background-color: var(--black-1);
+        overflow-y: overlay;
     }
 
     #root {

@@ -64,12 +64,16 @@ const StyledHome = styled.div`
 
         .about {
             margin: 0 auto;
-            padding: 3rem 0;
             width: 100%;
             min-height: 20rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
+
+            & h2{
+                margin: 0;
+                line-height: 100%;
+            }
         }
 
         .about__profile {
@@ -117,7 +121,7 @@ const StyledHome = styled.div`
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            justify-content: center;
+            justify-content: space-between;
             align-items: start;
             width: 100%;
             border-radius: 1.2rem;
