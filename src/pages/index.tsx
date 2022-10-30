@@ -54,7 +54,7 @@ export default function Home() {
             <Head>
                 <title>Davi Mota | Home</title>
             </Head>
-            <StyledHome className='px-5'>
+            <StyledHome>
                 <section className="sct-1">
                     <div className="sct-1__content">
                         <h2>Hello, I am</h2>
@@ -63,9 +63,7 @@ export default function Home() {
                         <p>Front-end Developer</p>
                         <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
-                    <div className="dev__vetor">
-                        <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
-                    </div>
+                    <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
                 </section>
                 <section className="about">
                     <div className="about__profile">

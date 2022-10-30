@@ -1,28 +1,31 @@
+* Hardcoded infos until bulding and API
 # Tasks
-[ ] Remove bootstrap
-[ ] fix:(PortCard/techtags): resolve horizontal overflow
-[ ] Form component to contact
-[ ] Responsive version
-[ ] SkillCard Component with variants
-[ ] Add language switch in navbar (en/pt-br)
-[ ] Add darkmode/lightmode theme
-[ ] Use rem and responsive 
-[ ] Hardcoded infos until bulding and API
-[ ] Use Material-UI
-[ ] Create Carousel for portfolio projects
-    [ ] Use array of objects to handle the iteration
-    [x] Chevron to scroll
-    [ ] Auto-scroll after 5 seconds
-    [x] Use card inside carousel props
-    [ ] Use infinite carousel
-    [ ] Transparent gradient when overflow start
-[x] Style scroolbar
-[x] Fill index page information
-[x] Send root css through styled components
-[x] SocialButtons Component
-[x] Testing vercel
-[x] Deploy into vercel
-[x] Connect my domain
+- [ ] V1
+- [ ] Navlinks
+- [ ] API to dynamic data
+- [ ] Remove bootstrap
+- [ ] fix:(PortCard/techtags): resolve horizontal overflow
+- [ ] Form component to contact
+- [ ] Responsive version
+- [ ] SkillCard Component with variants
+- [ ] Add language switch in navbar (en/pt-br)
+- [ ] Add darkmode/lightmode theme
+- [ ] Use rem and responsive 
+- [ ] Use Material-UI
+- [ ] Create Carousel for portfolio projects
+    - [ ] Use array of objects to handle the iteration
+    - [x] Chevron to scroll
+    - [ ] Auto-scroll after 5 seconds
+    - [x] Use card inside carousel props
+    - [ ] Use infinite carousel
+    - [ ] Transparent gradient when overflow start
+- [x] Style scroolbar
+- [x] Fill index page information
+- [x] Send root css through styled components
+- [x] SocialButtons Component
+- [x] Testing vercel
+- [x] Deploy into vercel
+- [x] Connect my domain
  
  
 ## Youtube

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledHome = styled.div`
-        
+        padding: 0 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -22,30 +22,28 @@ const StyledHome = styled.div`
             font-weight: 700;
         }
 
-        .dev__vetor {
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            width: 40%;
-        }
 
         .dev__vetor__img {
-            width: 30rem;
-            height: 30rem;
+            max-width: 30rem;
+            max-height: 30rem;
         }
 
         .sct-1 {
-            height: 500px;
+            min-height: 32rem;
             display: flex;
+            justify-content: center;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
+            row-gap: 2.5rem;
             /* padding: 0 5rem; */
         }
 
         .sct-1__content {
-            width: 50%;
+            /* max-width: 22rem; */
             display: flex;
             flex-direction: column;
+            /* margin-right: auto; */
 
             & h2{
                 font-size: 2rem;
@@ -54,6 +52,10 @@ const StyledHome = styled.div`
 
             & p{
                 color: var(--white-1);
+            }
+
+            & h2, & h1, & p{
+                white-space: nowrap;
             }
         }
 
@@ -64,11 +66,12 @@ const StyledHome = styled.div`
 
         .about {
             margin: 0 auto;
-            width: 100%;
             min-height: 20rem;
             display: flex;
             flex-direction: row;
             justify-content: center;
+            flex-wrap: wrap;
+            row-gap: 2.5rem;
 
             & h2{
                 margin: 0;
@@ -76,12 +79,36 @@ const StyledHome = styled.div`
             }
         }
 
+        .about__content {
+            min-width: 30rem;
+            max-width: 100%;
+            padding: 3rem 2rem;
+            color: var(--white-1);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: start;
+            /* width: 100%; */
+            border-radius: 1.2rem;
+            background-color: var(--blue-1);
+            flex: 1;
+            /* background-color: blue; */
+        }
+        
         .about__profile {
             height: 100%;
             display: flex;
             flex-direction: column;
             /* padding: 0 2rem; */
             margin-right: 2.5rem;
+        }
+        
+        .about__content p {
+            font-size: 1rem;
+            font-weight: 500;
+            text-overflow: hidden;
+            max-width: 100% // TEMP
         }
 
         .about__profile__picture {
@@ -115,28 +142,9 @@ const StyledHome = styled.div`
             color: var(--white-1);
         }
 
-        .about__content {
-            padding: 3rem 2rem;
-            color: var(--white-1);
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            justify-content: space-between;
-            align-items: start;
-            width: 100%;
-            border-radius: 1.2rem;
-            background-color: var(--blue-1);
-            /* background-color: blue; */
-        }
-
         .about__content h3 {
             font-size: 1.5rem;
             font-weight: 600;
-        }
-
-        .about__content p {
-            font-size: 1rem;
-            font-weight: 500;
         }
 
         .about__profile{

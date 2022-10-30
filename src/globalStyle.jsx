@@ -33,9 +33,24 @@ const globalStyle = createGlobalStyle`
         }
     }
 
-    @media(max-width: 720px){
+    @media(max-width: 800px){
         html{
             font-size: 87.5%;
+        }
+        .sct-1{
+            flex-direction: column;
+        }
+        .sct-1__content{
+            align-items: center;
+        }
+    }
+
+    @media(max-width: 500px){
+        html{
+            font-size: 80%;
+        }
+        .sct-1{
+            flex-direction: column;
         }
     }
 

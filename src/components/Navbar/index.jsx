@@ -15,23 +15,25 @@ function Navbar() {
                         {/* </Link> */}
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                        {/* 
                         <ul className="navbar-nav">
                             <li className="ml-2 nav-item">
-                                {/* <Link to='/linktree' className="nav-link active"> */}
+                                <Link to='/linktree' className="nav-link active">
                                     Links
-                                {/* </Link> */}
-                            </li>
-                            {/* <li className="nav-item">
+                                </Link>
+                            </li> 
+                            <li className="nav-item">
                                 <Link to='/portfolio' className="nav-link">
                                     Portfolio
                                 </Link>
-                            </li> */}
-                            {/* <li className="nav-item">
+                            </li> 
+                            <li className="nav-item">
                                 <Link to='/achievements' className="nav-link">
                                     Achievements
                                 </Link>
-                            </li> */}
-                        </ul>
+                            </li>
+                        </ul> 
+                        */}
                     </div>
                 </div>
             </nav>
