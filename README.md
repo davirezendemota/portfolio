@@ -1,13 +1,10 @@
 * Hardcoded infos until bulding and API
 # Tasks
-- [x] V1
 - [ ] Navlinks
 - [ ] API to dynamic data
 - [ ] Remove bootstrap
 - [ ] fix:(PortCard/techtags): resolve horizontal overflow
 - [ ] Form component to contact
-- [ ] Responsive version
-- [ ] SkillCard Component with variants
 - [ ] Add language switch in navbar (en/pt-br)
 - [ ] Add darkmode/lightmode theme
 - [ ] Use rem and responsive 
@@ -19,6 +16,9 @@
     - [x] Use card inside carousel props
     - [ ] Use infinite carousel
     - [ ] Transparent gradient when overflow start
+- [x] SkillCard Component with variants
+- [x] V1
+- [x] Responsive version
 - [x] Style scroolbar
 - [x] Fill index page information
 - [x] Send root css through styled components
