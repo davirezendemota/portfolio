@@ -74,6 +74,13 @@ const globalStyle = createGlobalStyle`
         .skills{
             padding: 0 1rem;
         }
+        .carousel__group {
+            flex-direction: column;
+            padding: 0 1rem;
+        }
+        .scrollBtn{
+            display: none
+        }
     }
 
     * {
