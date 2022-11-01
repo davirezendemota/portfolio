@@ -16,7 +16,7 @@ export default function Home() {
         {
             tit: 'davimota.com',
             desc: 'My website to unify personal projects, tools, carrer history, certicates and degrees.',
-            techs: [ 'NextJs', 'ReactJs', 'JavaScript', 'JavaScript', 'JavaScript', 'CSS/HTML'],
+            techs: [ 'NextJs', 'ReactJs', 'JavaScript', 'CSS/HTML'],
             github: 'https://github.com/davirezendemota/davimota.com'
         }
     ]
