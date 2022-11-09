@@ -2,7 +2,6 @@
 # Tasks
 - [ ] Navlinks
 - [ ] API to dynamic data
-- [ ] Remove bootstrap
 - [ ] fix:(PortCard/techtags): resolve horizontal overflow
 - [ ] Form component to contact
 - [ ] Add language switch in navbar (en/pt-br)
@@ -16,6 +15,7 @@
     - [x] Use card inside carousel props
     - [ ] Use infinite carousel
     - [ ] Transparent gradient when overflow start
+- [x] Remove bootstrap
 - [x] SkillCard Component with variants
 - [x] V1
 - [x] Responsive version

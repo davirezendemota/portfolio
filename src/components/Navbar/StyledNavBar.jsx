@@ -1,17 +1,31 @@
 import styled from 'styled-components'
 
 const StyledNavBar = styled.div`
-    .nav-link{
-        color: white !important;
-        font-weight: 600;
-        font-size: 1.2rem;
+
+    .navbar{
+      padding: 1rem 2r;
+      
+      & .container{
+        display: flex;
+        padding: 1rem 2rem;
+      }
     }
-    .nav-link:hover{
-        color: var(--blue-3) !important;
+    .logo{
+      width: fit-content;
     }
-    #navbarNavDropdown{
-        justify-content: end !important;
+    .navlinks{
+      display: flex;
+      gap: 1rem;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-left: auto;
+
+      & li {
+        color: var(--white-1)
+      }
     }
+
 `;
 
 export { StyledNavBar }

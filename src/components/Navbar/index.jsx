@@ -7,33 +7,23 @@ import { StyledNavBar } from "./StyledNavBar";
 function Navbar() {
     return (
         <StyledNavBar>
-            <nav className="navbar navbar-expand-lg position-relative px-5">
-                <div className="px-0 container-fluid">
-                    <div className="navbar-brand">
+            <nav className="navbar">
+                <div className="container">
+                    <div className="logo">
                         {/* <Link to='/'> */}
-                            <Image src={logo} alt="logoSrc" />
+                            <Image 
+                              src={logo} 
+                              alt="logoSrc" 
+                              quality={100}
+                            />
                         {/* </Link> */}
                     </div>
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        {/* 
-                        <ul className="navbar-nav">
-                            <li className="ml-2 nav-item">
-                                <Link to='/linktree' className="nav-link active">
-                                    Links
-                                </Link>
-                            </li> 
-                            <li className="nav-item">
-                                <Link to='/portfolio' className="nav-link">
-                                    Portfolio
-                                </Link>
-                            </li> 
-                            <li className="nav-item">
-                                <Link to='/achievements' className="nav-link">
-                                    Achievements
-                                </Link>
-                            </li>
-                        </ul> 
-                        */}
+                    <ul className="navlinks">
+                      <li>Linktree</li>
+                      <li>Projects</li>
+                    </ul>
+                    <div className="page-options">
+
                     </div>
                 </div>
             </nav>
