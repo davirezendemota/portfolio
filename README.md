@@ -1,7 +1,8 @@
 * Hardcoded infos until bulding and API
 # Tasks
-- [ ] Navlinks
+- [ ] Use prisma
 - [ ] API to dynamic data
+- [ ] Navlinks
 - [ ] fix:(PortCard/techtags): resolve horizontal overflow
 - [ ] Form component to contact
 - [ ] Add language switch in navbar (en/pt-br)
