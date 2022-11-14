@@ -60,7 +60,7 @@ export default function Home() {
                         <h2>Hello, I am</h2>
                         <h1>Davi Mota</h1>
                         {/* <p>And this is my website!</p> */}
-                        <p>Front-end Developer</p>
+                        <p >Front-end Developer</p>
                         <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
                     </div>
                     <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
