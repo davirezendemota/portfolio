@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/StyledComponents/StyledHome.jsx", "src/globalStyle.jsx", "src/pages/api/db.js"  ],
+, "src/StyledComponents/StyledHome.jsx", "src/globalStyle.jsx", "src/pages/api/db.js", "src/contexts/auth.jsx", "src/pages/_app.jsx", "src/pages/login.jsx", "src/pages/index.jsx", "src/pages/signup.jsx"  ],
   "exclude": [
     "node_modules"
   ]

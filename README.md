@@ -1,5 +1,12 @@
 * Hardcoded infos until bulding and API
 # Tasks
+- [ ] Create login page
+- [ ] Create fetch to consume stocks data
+- [ ] Create wishlist 
+
+- [ ] Learn axios
+- [ ] Study planetscale
+- [ ] Study supabase
 - [ ] Use prisma
 - [ ] API to dynamic data
 - [ ] Navlinks
@@ -48,6 +55,8 @@
 * Use VIM as my editor - https://www.youtube.com/watch?v=X6AR2RMB5tE
 * React Variants - https://stackoverflow.com/questions/63663554/approach-to-creating-variants-with-styled-components
 * Theo Channel - https://www.youtube.com/c/TheoBrowne1017
+* API Routes with nextjs - https://www.youtube.com/watch?v=ZDSiAwuoX0c
+* Login - https://www.youtube.com/watch?v=5KqP3Vx8Y4s
 
 ### NLW#4
 * NLW#4 Rumo Ao Próximo Nível - (1/6) - https://www.youtube.com/watch?v=XDFlV76UJuA
