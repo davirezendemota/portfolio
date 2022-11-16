@@ -22,29 +22,26 @@ export const AuthContextProvider = ({ children }) => {
     setLoading(false)
   }, [])
 
-  const login = (email, password) => {
-
-    //console.log('login', { email, password })
+  const login = async (email, password) => {
 
     // create api to run session
 
-    const loggedUser = {
-      id: '123',
-      email
-    }
+    //verify if user exists
+    const response = await fetch(`/api/users/${email}/${password}`)
+    .then(res => res.json())
+    .catch(() => location.reload())
+
+    const loggedUser = response.data
 
     localStorage.setItem('user', JSON.stringify(loggedUser))
 
-    if (password === "secret") {
-      setUser(loggedUser)
-      router.push("/")
-    }
+    setUser(loggedUser)
+    router.push("/")
   }
 
   const logout = () => {
-    console.log('logout')
+    localStorage.removeItem('user')
     setUser(null)
-    router.push("/login")
   }
 
   return (

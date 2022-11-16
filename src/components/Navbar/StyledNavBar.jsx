@@ -5,7 +5,7 @@ const StyledNavBar = styled.div`
     .navbar{
       padding: 1rem 2r;
       
-      & .container{
+      & .nav__container{
         display: flex;
         padding: 1rem 2rem;
       }
@@ -22,7 +22,8 @@ const StyledNavBar = styled.div`
       margin-left: auto;
 
       & li {
-        color: var(--white-1)
+        color: var(--white-1);
+        cursor: pointer;
       }
     }
 

@@ -4,14 +4,12 @@ import Image from 'next/image'
 import { StyledHome } from "../StyledComponents/StyledHome";
 import { Button } from "../components/Button";
 import { Carousel } from "../components/Carousel";
-import { Card } from "../components/Card";
 import { SocialIcons } from "../components/SocialIcons";
 import devVetor from "../assets/img/dev-vetor--cutted.png";
 import profilePicture from "../assets/img/profile__picture.png";
 import { Footer } from '../components/Footer';
 import { Navbar } from '../components/Navbar';
 
-import { Private } from '../contexts/auth';
 
 export default function Home() {
 
@@ -53,61 +51,58 @@ export default function Home() {
 
 
   return (
-    <Private>
-      <div>
-        <Navbar />
-        <Head>
-          <title>Davi Mota | Home</title>
-        </Head>
-        <StyledHome className="Home">
-          <section className="sct-1">
-            <div className="sct-1__content">
-              <h2>Hello, I am</h2>
-              <h1>Davi Mota</h1>
-              {/* <p>And this is my website!</p> */}
-              <p >Front-end Developer</p>
-              <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
-            </div>
-            <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
-          </section>
-          <section className="about">
-            <div className="about__profile">
-              <Image src={profilePicture} alt="Profile Picture" className="about__profile__picture" />
-              <span className="about__profile__nome">Davi Mota</span>
-            </div>
-            <div className="about__content">
-              <h2>About me</h2>
-              <p>
-                I am a self taught software developer, able to bring knowledge in design, creation and maintenance of software systems.
-                <br />
-                <br />
-                Partner and Front-end development leader at ACB WEB, a company focused on creation of customized online systems for companies.
-              </p>
-              <SocialIcons />
-            </div>
-          </section>
-          <section className="portfolio">
-            <h2>Projects</h2>
-            <Carousel variant="projects" data={projectDB} />
-          </section>
-          <section className="skills">
-            <h2>Skills</h2>
-            <Carousel variant="skills" data={skillDB} controls />
-            {/* <Card skillName="React" variant="SkillCard" />
+    <div>
+      <Navbar />
+      <Head>
+        <title>Davi Mota | Home</title>
+      </Head>
+      <StyledHome className="Home">
+        <section className="sct-1">
+          <div className="sct-1__content">
+            <h2>Hello, I am</h2>
+            <h1>Davi Mota</h1>
+            {/* <p>And this is my website!</p> */}
+            <p >Front-end Developer</p>
+            <Button link="./Davi_da_Mota_Rezende_-_Desenvolvedor_Frontend_Junior.pdf">HIRE ME</Button>
+          </div>
+          <Image src={devVetor} alt="Davi Mota" className="dev__vetor__img" />
+        </section>
+        <section className="about">
+          <div className="about__profile">
+            <Image src={profilePicture} alt="Profile Picture" className="about__profile__picture" />
+            <span className="about__profile__nome">Davi Mota</span>
+          </div>
+          <div className="about__content">
+            <h2>About me</h2>
+            <p>
+              I am a self taught software developer, able to bring knowledge in design, creation and maintenance of software systems.
+              <br />
+              <br />
+              Partner and Front-end development leader at ACB WEB, a company focused on creation of customized online systems for companies.
+            </p>
+            <SocialIcons />
+          </div>
+        </section>
+        <section className="portfolio">
+          <h2>Projects</h2>
+          <Carousel variant="projects" data={projectDB} />
+        </section>
+        <section className="skills">
+          <h2>Skills</h2>
+          <Carousel variant="skills" data={skillDB} controls />
+          {/* <Card skillName="React" variant="SkillCard" />
                         <Card skillName="JavaScript" variant="SkillCard" />
                         <Card skillName="PHP" variant="SkillCard" />
                         <Card skillName="HTML/CSS" variant="SkillCard" />
                         <Card skillName="Git/GitHub" variant="SkillCard" />
                         <Card skillName="Figma" variant="SkillCard"/> */}
-          </section>
-          <section className="contact">
-            <h2>Contact</h2>
-            <SocialIcons />
-          </section>
-          <Footer />
-
-        </StyledHome>
-      </div>
-    </Private >
+        </section>
+        <section className="contact">
+          <h2>Contact</h2>
+          <SocialIcons />
+        </section>
+      </StyledHome>
+      <Footer />
+    </div>
   )
 }
