@@ -15,9 +15,7 @@ function Carousel ({controls = false, variant = null, data = null, children = nu
 
   const [showScrollBtns, setShowScrollBtns] = useState(controls)
 
-  window.onresize = () => {
-    // setCarouselWidth(carousel.current.offsetWidth)
-    
+  const checkResize = () => {
     const carouselW = carousel.current.offsetWidth
     const carouselWrapperW = carousel.current.scrollWidth
 
@@ -26,8 +24,11 @@ function Carousel ({controls = false, variant = null, data = null, children = nu
     } else {
       setShowScrollBtns(false)
     }
-
   }
+
+  window.onresize = checkResize
+
+  useEffect(checkResize)
 
     const goLeft = (e) => { // take offset width and increase to scroll position
         e.preventDefault();
