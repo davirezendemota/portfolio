@@ -3,11 +3,9 @@ import { useRef } from 'react';
 import { StyledCarousel } from './StyledCarousel';
 
 // FontAwesome components
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { FaCaretLeft, FaCaretRight } from 'react-icons/fa6';
 import { PortCard } from '../Card/PortCard';
 import { SkillCard } from '../Card/SkillCard';
-
 
 
 function Carousel ({controls = false, variant = null, data = null, children = null}){
@@ -41,11 +39,11 @@ function Carousel ({controls = false, variant = null, data = null, children = nu
 
     return (
         <StyledCarousel>
-            {controls && <FontAwesomeIcon onClick={goLeft} icon={faCaretLeft} className="scrollBtn"/>}
+            {controls && <FaCaretLeft onClick={goLeft} className="scrollBtn"/>}
             <div className="carousel__group" ref={carousel}>
                 {renderSwitch(variant)}
             </div>
-            {controls && <FontAwesomeIcon onClick={goRight} icon={faCaretRight} className="scrollBtn"/>}
+            {controls && <FaCaretRight onClick={goRight} className="scrollBtn"/>}
         </StyledCarousel>
     )
 }

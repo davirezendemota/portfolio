@@ -1,16 +1,12 @@
 import { StyledSocialIcons } from "./StyledSocialIcons";
-// FontAwesome components
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faGithub, faLinkedin, faInstagram, faFigma } from "@fortawesome/free-brands-svg-icons";
+import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 
 function SocialIcons (){
     return (
         <StyledSocialIcons>
-            <FontAwesomeIcon onClick={() => {window.location="mailto:rezendemota.davi@gmail.com"}} icon={faEnvelope} />
-            <FontAwesomeIcon onClick={() => {window.location="https://github.com/davirezendemota"}} icon={faGithub} />
-            <FontAwesomeIcon onClick={() => {window.location="https://linkedin.com/in/davirezendemota"}} icon={faLinkedin} />
-            <FontAwesomeIcon onClick={() => {window.location="https://instagram.com/davirezendemota"}} icon={faInstagram} />
+            <FaGithub onClick={() => {window.location="https://github.com/davirezendemota"}}/>
+            <FaEnvelope onClick={() => {window.location="mailto:davi@rmconsult.io"}} />
+            <FaLinkedin onClick={() => {window.location="https://linkedin.com/in/davirezendemota"}}/>
         </StyledSocialIcons>
     )
 }

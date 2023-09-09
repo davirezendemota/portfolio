@@ -1,20 +1,9 @@
-import Image from 'next/image';
 import styled from 'styled-components';
 import { StyledCard } from './StyledCard'
 import { ExperienceBar } from '../ExperienceBar';
 
 // FAICONS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareJs,
-        faFigma,
-        faReact, 
-        faGitAlt, 
-        faGithub, 
-        faHtml5, 
-        faCss3Alt,
-        faPhp,
-    } from "@fortawesome/free-brands-svg-icons";
-
+import { FaSquareJs, FaHtml5, FaCss3, FaGitAlt, FaGithub, FaFigma, FaPhp, FaReact, FaDocker } from 'react-icons/fa6'
 
 const StyledSkillCard = styled(StyledCard)`
 
@@ -98,27 +87,29 @@ function SkillCard({data}) {
     {
         switch(skillName){
             case 'JavaScript':
-                return <FontAwesomeIcon className="skillIcon" icon={faSquareJs} />;
+                return <FaSquareJs className="skillIcon"/>;
             case 'HTML/CSS':
                 return (
                     <div className="multiIcon">
-                        <FontAwesomeIcon className="skillIcon" icon={faHtml5} />
-                        <FontAwesomeIcon className="skillIcon" icon={faCss3Alt} />
+                        <FaHtml5 className="skillIcon"/>
+                        <FaCss3 className="skillIcon"/>
                     </div>
                 );
             case 'React':
-                return <FontAwesomeIcon className="skillIcon" icon={faReact} />;
+                return <FaReact className="skillIcon"/>;
             case 'Git/GitHub':
                 return (
                     <div className="multiIcon">
-                        <FontAwesomeIcon className="skillIcon" icon={faGitAlt} />
-                        <FontAwesomeIcon className="skillIcon" icon={faGithub} />
+                        <FaGitAlt className="skillIcon"/>
+                        <FaGithub className="skillIcon"/>
                     </div>
                 );
             case 'Figma':
-                return <FontAwesomeIcon className="skillIcon" icon={faFigma} />;
+                return <FaFigma className="skillIcon" />;
             case 'PHP':
-                return <FontAwesomeIcon className="skillIcon" icon={faPhp} />;
+                return <FaPhp className="skillIcon"/>;
+            case 'Docker':
+                return <FaDocker className="skillIcon"/>;
             default:
                 return '';
         }

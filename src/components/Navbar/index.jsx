@@ -1,50 +1,21 @@
-import Image from "next/image";
-import Link from "next/link";
-import logo from "../../assets/img/logo.svg";
+// STYLED
 import { StyledNavBar } from "./StyledNavBar";
 
-import { AuthContext } from "../../contexts/auth";
-import { useContext } from 'react'
+import logo from "../../assets/img/logo.svg";
 
-function Navbar() {
-
-  const { logout, authenticated } = useContext(AuthContext)
+export function Navbar() {
 
   return (
     <StyledNavBar>
       <nav className="navbar">
         <div className="nav__container">
           <div className="logo">
-            <Link href='/'>
-              <Image
-                src={logo}
-                alt="logoSrc"
-                quality={100}
-              />
-            </Link>
-          </div>
-          <ul className="navlinks">
-            {!authenticated && (
-              <>
-                <Link href="/login">
-                  <li>Login</li>
-                </Link>
-                <Link href="/signup">
-                  <li>Sign Up</li>
-                </Link>
-              </>
-            )}
-            {/* <li>Linktree</li>
-            <li>Projects</li> */}
-            {authenticated && <li onClick={logout}>Logout</li>}
-          </ul>
-          <div className="page-options">
-
+            <a href="/">
+              <img src={logo} alt="logo" />
+            </a>
           </div>
         </div>
       </nav>
     </StyledNavBar>
   );
 }
-
-export { Navbar }
