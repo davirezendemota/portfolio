@@ -10,7 +10,7 @@ import { Footer } from '../components/Footer';
 
 // ASSETS
 import devVetor from "../assets/img/dev-vetor--cutted.png";
-import profilePicture from "../assets/img/profile__picture.png";
+import profilePicture from "../assets/img/profile__picture.jpg";
 
 // DB
 import { projectDB, skillDB } from '../db.js'
