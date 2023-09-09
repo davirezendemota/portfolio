@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 import { StyledCarousel } from './StyledCarousel';
 
@@ -10,8 +10,25 @@ import { SkillCard } from '../Card/SkillCard';
 
 function Carousel ({controls = false, variant = null, data = null, children = null}){
 
-    const carousel = useRef(null);
+  const carousel = useRef(null);
+  const carouselWrapper = useRef(null);
+
+  const [showScrollBtns, setShowScrollBtns] = useState(controls)
+
+  window.onresize = () => {
+    // setCarouselWidth(carousel.current.offsetWidth)
     
+    const carouselW = carousel.current.offsetWidth
+    const carouselWrapperW = carousel.current.scrollWidth
+
+    if(carousel && carouselWrapperW > carouselW){
+      setShowScrollBtns(true)
+    } else {
+      setShowScrollBtns(false)
+    }
+
+  }
+
     const goLeft = (e) => { // take offset width and increase to scroll position
         e.preventDefault();
         
@@ -38,12 +55,12 @@ function Carousel ({controls = false, variant = null, data = null, children = nu
     }
 
     return (
-        <StyledCarousel>
-            {controls && <FaCaretLeft onClick={goLeft} className="scrollBtn"/>}
+        <StyledCarousel ref={carouselWrapper} className="relative">
+            {showScrollBtns && <FaCaretLeft onClick={goLeft} className="scrollBtn min-w-fit absolute left-2 opacity-50"/>}
             <div className="carousel__group" ref={carousel}>
                 {renderSwitch(variant)}
             </div>
-            {controls && <FaCaretRight onClick={goRight} className="scrollBtn"/>}
+            {showScrollBtns && <FaCaretRight onClick={goRight} className="scrollBtn min-w-fit absolute right-2 opacity-50"/>}
         </StyledCarousel>
     )
 }

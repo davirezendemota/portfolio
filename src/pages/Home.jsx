@@ -36,7 +36,7 @@ export default function Home() {
         {/* SECTION */}
         <section className="about">
           <div className="about__profile">
-            <img src={profilePicture} alt="Profile Picture" className="about__profile__picture" />
+            <img src={profilePicture} alt="Profile Picture" className="about__profile__picture border-primary-400" />
             <span className="about__profile__nome">Davi Mota</span>
           </div>
           <div className="about__content">
@@ -51,14 +51,18 @@ export default function Home() {
           </div>
         </section>
         {/* SECTION */}
+        {/*
         <section className="portfolio">
           <h2>Projects</h2>
           <Carousel variant="projects" data={projectDB} />
         </section>
+        */}
+        {/* SECTION */}
         <section className="skills">
           <h2>Skills</h2>
           <Carousel variant="skills" data={skillDB} controls />
         </section>
+        {/* SECTION */}
         <section className="contact">
           <h2>Contact</h2>
           <SocialIcons />
